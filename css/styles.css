@@ -1,0 +1,443 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/Roboto-Regular-webfont.eot');
+    src: url('../font/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Regular-webfont.woff') format('woff'),
+         url('../font/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../font/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+	
+@font-face {	
+		font-family: 'robotolight';
+    src: url('../font/Roboto-Light-webfont.eot');
+    src: url('../font/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Light-webfont.woff') format('woff'),
+         url('../font/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../font/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* -------------------------- Main CSS -------------------------- */
+
+html, body{
+	
+  margin: 0;
+  padding: 0;
+	overflow-x: hidden;
+	
+}
+
+body{
+	
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #d0d0d0;
+	
+}
+
+.homeMain{
+  height: 600vh;
+  width: 100%;
+  min-height: 600px;
+	display: none;
+	opacity: 0;
+}
+
+
+/* -------------------------- Start Page CSS -------------------------- */
+
+
+.wholePageStart{
+	background-image: url(../img/4949496.jpg);
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	
+}
+
+.overlay{
+	position: fixed;
+	z-index: 100;
+}
+
+.logo{
+	position: absolute;
+	display: block;
+	top: calc(50% - 250);
+	left: calc(50% - 200px);
+	width: 400px;
+}
+.logo1{
+	position: absolute;
+	display: block;
+	top: calc(50% - 250px);
+	left: calc(50% - 200px);
+	width: 400px;
+}
+.logo2{
+	position: absolute;
+	display: block;
+	top: calc(50% - 250px);
+	left: calc(50% - 200px);
+	width: 400px;
+}
+/* -------------------------- Menu CSS -------------------------- */
+
+
+.startButton{
+  position: absolute;
+	width: 200px; 
+  bottom: 2%;
+	text-align: center;
+	margin: 0 calc(50% - 100px);
+  background-color: rgba(100%, 100%, 100%, 0.85);
+	display: block;
+  max-width: 250px;
+  text-decoration: none;
+	font-family: 'robotolight';
+	z-index: 1;
+}
+
+/*
+.continueFirst{
+	position: absolute;
+	bottom: 10%;
+	right: 50%;
+	z-index: 1000;
+}
+*/
+
+.navLines{
+  background-color: #b5b5b5;
+  position: fixed;
+}
+
+.topLineNav{
+  height: 1px;
+  top: 15%;
+}
+
+.rightLineNav{
+  width: 1px;
+  height: 0;
+  left: calc(100% - 15%);
+  top: 0;
+}
+
+.bottomLineNav{
+  height: 1px;
+  bottom: 15%;
+}
+
+.leftLineNav{
+  width: 1px;
+  left: 15%;
+  top: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+/* Icon 1 */
+
+#nav-icon3{
+	opacity: 0;
+  width: 60px;
+  height: 45px;
+  position: fixed;
+	top: 5vh;
+	left: 5.5%;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .7s ease-in-out;
+  -moz-transition: .7s ease-in-out;
+  -o-transition: .7s ease-in-out;
+  transition: .7s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon3 span{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 70%;
+  background: #737373;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+  top: 7px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 29px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menuItem{
+	position: fixed;
+	left: .5%;
+	width: 14%;
+	height: 45px;
+	background-color: #575757;
+	opacity: 0;
+	
+}
+
+.menuItem:hover {
+	position: fixed;
+	left: .5%;
+	width: 14%;
+	height: 45px;
+	background-color: #2f2f2f;
+	opacity: 0;
+	
+}
+
+.aboutSection{
+	top: calc(16.2% + 0px);
+}
+.webSection{
+	top: calc(16.2% + 55px);
+}
+.ModelingSection{
+	top: calc(16.2% + 110px);
+}
+.graphicSection{
+	top: calc(16.2% + 165px);
+}
+.contactSection{
+	top: calc(16.2% + 220px);
+}
+
+.menuLinks{
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #00adee;
+	font-family: 'robotolight';
+	font-size: 1.1em;
+	margin: 0;
+	padding-top: 10px;
+}
+
+.sizePadding{
+/*		padding-top: 4px;*/
+	}
+
+/* -------------------------- Content CSS -------------------------- */
+
+.exit{
+	display: block;
+	width: 40px;
+	position: relative;
+	top: 0;
+ 	left: calc(100% - 75px);
+  margin: 20px;
+}
+
+
+/* ----------- About Me Content CSS ----------- */
+.aboutHolder{
+	width: 100%;
+	height: 100vh;
+	display: block;
+	position: relative;
+}
+
+.aboutMe{
+	display: block;
+	position: relative;
+	width: 65%;
+	height: 60vh;
+	background-color: rgba(255, 255, 255, 0.4);
+	border: #ffffff solid 1px;
+	margin: 0 auto;
+	margin-top: 20vh;
+}
+
+.aboutLogo{
+	position: relative;
+	display: block;
+	float: right;
+	margin-top: 2%;
+	width: 15%;
+}
+
+/* ----------- Web Content CSS ----------- */
+
+.webContainer{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+}
+
+.hoverMain{
+	height: 60vh;
+	width: 65%;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	top: calc(50vh - 225px);
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.hover1{
+    background-size: cover;
+    background-repeat: no-repeat;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		pointer-events: none;
+}
+
+.ster .hover1{
+		background-image: url(../img/sterkMain.png);
+}
+
+.best .hover1{
+		background-image: url(../img/bestMain.png);
+}
+
+
+.hover2{
+	position: absolute;
+	top: 0;
+	left:  200px;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0.7;
+}
+
+.hover3{
+	position: absolute;
+	top: 0;
+	left: -200px;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0.7;
+	
+}
+
+.sterMainHolder{
+	width: 100%;
+	height: 100vh;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+.bestMainHolder{
+	width: 100%;
+	height: 100vh;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 100vh;
+}
+
+.popupOver{
+	z-index: 200;
+  display: block;
+  position: fixed;
+  top: 10%;
+	bottom: 10%;
+	right: 10%;
+	left: 10%;
+  width: 80%; 
+  height: 80%; 
+  background-color: rgba(0, 0, 0, .8);
+	
+}
+
+.sterPop{
+	display: none;
+	opacity: 0;
+	border: 1px solid #0386cb;
+}
+
+.bestPop{
+	display: none;
+	opacity: 0;
+	border: 1px solid #ff6961;
+}
+
+/* ----------- Adobe Content CSS ----------- */
+
+
+/* ----------- 3D Content CSS ----------- */
+
+/* ----------- Contact Content CSS ----------- */
+
+
+
+
+
+
+

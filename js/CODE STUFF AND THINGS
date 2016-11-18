@@ -1,0 +1,126 @@
+
+JS STUFFFFFFFFF
+
+/* Hamburger icon */
+var hbMenuIcon = $('#menuIcon');
+var dropDownMenu = $("#myDropdown");
+var menuItem = $('.hbmenuitem');
+
+hbMenuIcon.on('click', function(){
+  $(this).toggleClass("change");
+  dropDownMenu.toggleClass('show');
+
+});
+
+
+
+HTML STUFFFFF
+
+<div class="hblist" id="myDropdown">
+      <div class="hbmenuitem link-a"><img src="img/home-icon.svg" class="mb-icon"><a href="index.html" class="mba">HOME</a></div>
+      <div class="hbmenuitem link-b"><img src="img/portfolio-icon.svg" class="mb-icon"><a href="portfolio.html" class="mba">PORTFOLIO</a></div>
+      <div class="hbmenuitem link-c"><img src="img/about-icon.svg" class="mb-icon"><a href="about.html" class="mba">ABOUT</a></div>
+      <div class="hbmenuitem link-d"><img src="img/contact-icon.svg" class="mb-icon"><a href="contact.html" class="mba">CONTACT</a></div>
+    </div>
+    <div class="clearfix"></div>
+
+
+CSS STUYFFFFFFFFFF
+
+
+/* HAMBURGER MENU */
+.bar1, .bar2, .bar3 {
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.mb-icon {
+    display: none;
+  }
+
+
+
+
+MEDIA QUERIES FOR PHONES
+
+ul.menu {
+    display: none;
+  }
+  
+  .hbmenu {
+    display: inline-block;
+    cursor: pointer;
+    float: none;
+    margin: 50px auto 0;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 168px;
+    height: 130px;
+    margin: 0 70px auto;
+    background-image: url(../img/whitelogo.png);
+    display: block;
+    float: left;
+  }
+  
+  .hblist {
+    position: relative;
+    z-index: -10;
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .mba {
+  text-decoration: none !important;
+  list-style-type: none;
+  color: #000;
+  display: inline-block;
+}
+  
+  .hbmenuitem {
+    opacity: 0;
+    width: 100%;
+    padding: 10px 10px 10px 15px;
+    border-bottom: 1px solid #000;
+    background-color: greenyellow;
+    transition: opacity .5s ease;
+  }
+  .showItem {
+    opacity: 1;
+    transition: opacity .5s ease; 
+  }
+
+  .hbmenuitem:active {
+    background-color: #9be52a;
+  }  
+
+  .mb-icon {
+    margin-right: 15px;
+    position: relative;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+
+  .show {
+    display: block;
+    z-index: 100;
+  }
