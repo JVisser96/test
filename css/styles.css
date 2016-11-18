@@ -356,10 +356,13 @@ body{
 
 .ster .hover1{
 		background-image: url(../img/sterkMain.png);
+		background-size: 100%;
 }
 
 .best .hover1{
 		background-image: url(../img/bestMain.png);
+		background-size: 100%;
+
 }
 
 
@@ -434,6 +437,37 @@ body{
 /* ----------- 3D Content CSS ----------- */
 
 /* ----------- Contact Content CSS ----------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

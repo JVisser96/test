@@ -108,25 +108,26 @@ $(".menuContainer").delay(350).css({"display" : "none"});
 	
 	
 //	var firstHeight = $( window ).height() * 2;
-	
+	var scrollCheck = true;
 	
 	$(window).scroll(function() {
 			var height = $(window).scrollTop();
 			var webTop = $("#webContainer").offset().top;
 //			console.log(height);
-			console.log(webTop);
+//			console.log(webTop);
 
-			if(height < webTop) {
+			if(height <  (webTop - 400) && scrollCheck == true) {
 				$("#body").stop().animate({"background-color" : "#d0d0d0"}, 800);
 				$(".navLines").stop(false, true).animate({"background-color" : "#b5b5b5"}, 800);
 				$(".span").stop().animate({"background-color" : "#737373"}, 300);
-				
+				scrollCheck = false;
 			} 
 			
-			if(height >= (webTop - 400)) {
+			if(height >= (webTop - 400) && scrollCheck == false) {
 				$("#body").stop().animate({"background-color" : "#272727"}, 800);
 				$(".navLines").stop(false, true).animate({"background-color" : "#525252"}, 800);
 				$(".span").stop().animate({"background-color" : "#ffffff"}, 300);
+				scrollCheck = true;
 			}
 	});
 	

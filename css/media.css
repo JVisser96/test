@@ -79,7 +79,7 @@
 		width: 80%;
 	}
 
-	.hover1{
+	.ster .hover1{
 		background-image: url(../img/sterMainSmall.jpg);
 	}
 	
@@ -162,18 +162,18 @@
 		width: 60%;
 	}
 	
-	/* ----------- Web Content CSS ----------- */
+		/* ----------- Web Content CSS ----------- */
 
 
-	.hoverMain{
-		height: 65vh;
-		width: 80%;
-	}
+		.hoverMain{
+			height: 380px;
+			width: 80%;
+		}
 
-	.hover1{
-		background-image: url(../img/sterMainSmall.jpg);
-	}
-	
+		.ster .hover1{
+			background-image: url(../img/sterMainSmall.jpg);
+		}
+
 	
 }
 
